@@ -32,7 +32,7 @@ const OrderStatusChart: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get<OrderStatusData[]>(
-          "https://moneyflo-backend.onrender.com"
+          "https://moneyflo-backend.onrender.com/order-status"
         );
         setData(response.data);
       } catch (error) {
